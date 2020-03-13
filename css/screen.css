@@ -67,7 +67,7 @@ img {
 */
 
 h1 {
-  /* font-family: Roboto; */
+  font-family: 'Inter Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
@@ -76,6 +76,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Inter Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 23px;
   line-height: 32px;
   margin: 0 0 24px;
@@ -83,6 +84,7 @@ h2 {
 }
 
 h3 {
+  font-family: 'Inter Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin: 0 0 24px;
