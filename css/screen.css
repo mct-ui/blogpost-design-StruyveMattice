@@ -4,40 +4,6 @@
     Default markup for page level elements
 */
 
-/*
-    Components: Author
-*/
-
-.c-author {
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
-  gap: 16px;
-}
-
-.c-author__image {
-  width: 56;
-  height: 56;
-  border-radius: 100px;
-  margin-right: 16px;
-}
-
-.c-author__name,
-.c-author__meta {
-  margin-bottom: 0;
-}
-
-.c-author__meta {
-  font-size: 14px;
-  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 24px;
-}
-
-.c-author__name {
-  font-size: 16px;
-  line-height: 24px;
-}
-
 /* 
     Fonts
     --- 
@@ -207,6 +173,67 @@ a:focus {
   color: #1abaff;
 }
 
+/*
+    Components: Article
+*/
+
+.c-article__header,
+.c-article__body{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-article__header{
+  padding: 24px 24px 0;
+}
+
+.c-article__body{
+  padding: 0 24px;
+}
+
+/*
+    Components: Author
+*/
+
+.c-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.c-author__image {
+  width: 56;
+  height: 56;
+  border-radius: 100px;
+  margin-right: 16px;
+}
+
+.c-author__name,
+.c-author__meta {
+  margin-bottom: 0;
+}
+
+.c-author__meta {
+  font-size: 14px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 24px;
+}
+
+.c-author__name {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Utilities max-width
+   --- 
+   Utility classes to put specifix max widths onto elements.
+*/
+
+.u-max-width-sm{
+  max-width: 36em;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
@@ -215,18 +242,39 @@ a:focus {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  html {
+  .c-article__header{
     padding: 48px 48px 24px;
   }
-  h1 {
-    font-size: 58px;
-    line-height: 64px;
+
+  .c-article__author{
+    padding-bottom: 24px;
+  }
+
+  .c-article__body{
+    padding: 24px 48px;
   }
 }
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
 @media (min-width: 992px) {
+  .c-article__body{
+    display: flex;
+    gap: 24px;
+  }
+
+  .c-article__author{
+    width: 25%;
+  }
+
+  .c-article__content{
+    width: 75%;
+  }
+
+  .c-author{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
