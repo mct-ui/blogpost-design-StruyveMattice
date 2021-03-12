@@ -11,6 +11,8 @@
 .c-author {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
 }
 
 .c-author__image {
@@ -22,7 +24,7 @@
 
 .c-author__name,
 .c-author__meta {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .c-author__meta {
