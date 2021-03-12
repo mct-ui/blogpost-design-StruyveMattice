@@ -33,11 +33,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  max-width: 42em;
-  margin: 0 auto;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -76,7 +71,7 @@ h3{
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 36px;
+  font-size: 58px;
   font-weight: normal;
   line-height: 40px;
   margin: 0 0 24px;
@@ -225,6 +220,31 @@ a:focus {
   line-height: 24px;
 }
 
+/*
+    Components: Date
+*/
+
+.c-article__date{
+  font-size: 14px;
+  padding-bottom: 0px;
+  line-height: 16px;
+  color: #5C6366;
+}
+
+/*
+    Components: Blockquote
+*/
+
+.c-article__blockquote{
+  background-color: #F2FAF8;
+  color: #00B37D;
+  padding: 24px;
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 48px 0;
+}
+
 /* Utilities max-width
    --- 
    Utility classes to put specifix max widths onto elements.
@@ -237,11 +257,20 @@ a:focus {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
+
+  h1{
+    font-size: 36px;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  h1{
+    font-size: 46px;
+  }
+
   .c-article__header{
     padding: 48px 48px 24px;
   }
@@ -258,6 +287,11 @@ a:focus {
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
 @media (min-width: 992px) {
+
+  h1{
+    font-size: 52px;
+  }
+
   .c-article__body{
     display: flex;
     gap: 24px;
@@ -280,6 +314,9 @@ a:focus {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+  h1{
+    font-size: 52px;
+  }
 }
 
 /*
