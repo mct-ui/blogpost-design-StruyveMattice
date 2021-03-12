@@ -78,7 +78,7 @@ body {
  */
 
 ::selection {
-  background: #00b37d;
+  background: #00E6A1;
   color: white;
   text-shadow: none;
 }
@@ -99,6 +99,12 @@ img {
     ---
     Default markup for typographic elements
 */
+
+h1,
+h2,
+h3{
+  color: #17181A;
+}
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -191,7 +197,7 @@ a {
 
 a:visited,
 a:active {
-  color: #00b37d;
+  color: #00E6A1;
 }
 
 a:hover,
